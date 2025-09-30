@@ -21,10 +21,11 @@
   "homepage": "https://github.com/lnsy-dev/pochade-js#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rspack serve",
-    "build": "rspack build"
+    "start": "npx rspack serve",
+    "build": "npx rspack build"
   },
   "dependencies": {
+    "@lnsy/file-clerk": "^0.1.0",
     "dataroom-js": "^0.6.0"
   },
   "files": [
@@ -32,5 +33,11 @@
     "index.css",
     "styles/variables.css",
     "src/"
-  ]
+  ],
+  "devDependencies": {
+    "@rspack/cli": "^1.5.8",
+    "css-loader": "^7.1.2",
+    "dotenv": "^17.2.3",
+    "style-loader": "^4.0.0"
+  }
 }
